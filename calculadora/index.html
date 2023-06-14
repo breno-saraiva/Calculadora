@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="resultado" readonly>
+		</div>
+        
+		<div class="teclado">
+            <div class="conteinerNumber">
+                <div class="linhaNum">
+                    <button value="0" onclick="adicionarNumero(this)">0</button>
+                </div>
+
+                <div class="linhaNum">
+                    <button value="7" onclick="adicionarNumero(this)">7</button>
+                    <button value="8" onclick="adicionarNumero(this)">8</button>
+                    <button value="9" onclick="adicionarNumero(this)">9</button>
+                </div>
+                
+                <div class="linhaNum">
+                    <button value="4" onclick="adicionarNumero(this)">4</button>
+                    <button value="5" onclick="adicionarNumero(this)">5</button>
+                    <button value="6" onclick="adicionarNumero(this)">6</button>
+                </div>
+                
+                <div class="linhaNum">
+                    <button value="1" onclick="adicionarNumero(this)">1</button>
+                    <button value="2" onclick="adicionarNumero(this)">2</button>
+                    <button value="3" onclick="adicionarNumero(this)">3</button>
+                </div>
+            </div>
+
+            <div class="linha">
+                <button class="operador" value="+" onclick="adicionarOperador(this)">+</button>
+                <button class="operador" value="-" onclick="adicionarOperador(this)">-</button>
+                <button class="operador" value="*" onclick="adicionarOperador(this)">&times;</button>
+                <button class="operador" value="/" onclick="adicionarOperador(this)">&divide;</button>
+            </div>
+            
+			<div class="linha">
+                <button class="limpar" onclick="limpar()">C</button>
+				<button value="." onclick="adicionarDecimal(this)">.</button>
+                <button class="igual" onclick="calcular()">=</button>
+			</div>
+
+		</div>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>
